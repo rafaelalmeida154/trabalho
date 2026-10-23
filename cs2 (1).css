@@ -1,0 +1,548 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12161c;   
+    color: #e6e6e6;              
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.cabecalho {
+    display: flex;                    
+    justify-content: space-between;   
+    align-items: center;              
+    padding: 15px 40px;
+    background-color: #1c222b;
+    border-bottom: 3px solid #f5a623; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #f5a623;
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+
+.logo-icone {
+    font-size: 36px;
+}
+
+.logo-texto {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.logo-texto strong {
+    color: #f5a623;
+}
+
+.info {
+    font-size: 16px;
+    color: #cfd6df;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px;
+    background-color: #f5a623;
+}
+
+.menu a {
+    color: #12161c;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+
+.menu a:hover {
+    background-color: #12161c;
+    color: #f5a623;
+}
+
+
+.principal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 40px;
+    background-color: #1c222b;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.principal-imagem {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;                 
+    background-color: #12161c;
+    border: 2px solid #f5a623;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.principal-texto h1 {
+    font-size: 36px;
+    color: #f5a623;
+    margin-bottom: 15px;
+}
+
+.principal-texto p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.destaques {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destaques h2 {
+    font-size: 32px;
+    color: #f5a623;
+    margin-bottom: 30px;
+}
+
+
+.cartoes {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cartao {
+    flex: 1;                        
+    background-color: #1c222b;
+    border: 2px solid #2d3643;
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: 0.3s;               
+}
+
+.cartao:hover {
+    transform: translateY(-8px);    
+    border-color: #f5a623;
+}
+
+.cartao-icone {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.cartao h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    font-size: 16px;
+    color: #b8c0cc;
+}
+
+
+.chamada {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5a623, #d9531e); 
+    color: #12161c;
+}
+
+.chamada h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.chamada p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #12161c;
+    color: #f5a623;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 14px 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #12161c;
+    transform: scale(1.08);         
+}
+
+
+
+.localizacao {
+    padding: 40px 20px;
+}
+
+.localizacao h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #f5a623;
+    margin-bottom: 30px;
+}
+
+
+.localizacao-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 30px;                        
+    align-items: stretch;             
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.localizacao-mapa {
+    background-color: #1c222b;
+    border: 2px solid #f5a623;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 280px;
+}
+
+.localizacao-mapa svg {
+    display: block;
+    border-radius: 6px;
+}
+
+
+.localizacao-info {
+    background-color: #1c222b;
+    border: 2px solid #2d3643;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.localizacao-info:hover {
+    border-color: #f5a623;
+}
+
+.localizacao-info h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f5a623;
+}
+
+.localizacao-info p {
+    font-size: 16px;
+    color: #b8c0cc;
+    margin-bottom: 12px;
+}
+
+.localizacao-info strong {
+    color: #f5a623;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: #1c222b;
+    border-top: 3px solid #f5a623;
+    text-align: center;
+}
+
+.rodape-coluna h4 {
+    color: #f5a623;
+    margin-bottom: 8px;
+}
+
+.rodape-coluna a {
+    display: block;
+    color: #cfd6df;
+}
+
+.rodape-coluna a:hover {
+    color: #f5a623;
+}
+
+/* ===== PERGUNTAS FREQUENTES (details / summary) ===== */
+
+.faq {
+    padding: 40px 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #f5a623;
+    margin-bottom: 30px;
+}
+
+.faq-lista {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background-color: #1c222b;
+    border: 2px solid #2d3643;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.faq-item:hover,
+.faq-item[open] {
+    border-color: #f5a623;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    padding: 18px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    list-style: none;                 /* remove a seta padrão */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;                    /* remove a seta no Safari */
+}
+
+/* indicador + / − feito só com CSS */
+.faq-item summary::after {
+    content: "+";
+    font-size: 26px;
+    line-height: 1;
+    color: #f5a623;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary:focus-visible {
+    outline: 3px solid #f5a623;
+    outline-offset: -3px;
+    border-radius: 8px;
+}
+
+.faq-item p {
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+    color: #b8c0cc;
+}
+
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 26px;
+    }
+
+    .faq-item summary {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq {
+        padding: 30px 15px;
+    }
+
+    .faq h2 {
+        font-size: 22px;
+    }
+
+    .faq-item summary {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .faq-item p {
+        font-size: 15px;
+        padding: 0 15px 15px 15px;
+    }
+}
+
+.redes {
+    font-size: 26px;
+    letter-spacing: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+    .principal-texto h1 {
+        font-size: 26px;
+    }
+
+    .principal-texto p {
+        font-size: 16px;
+    }
+
+    .destaques h2,
+    .chamada h2 {
+        font-size: 26px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .cabecalho {
+        padding: 15px 20px;
+    }
+
+   
+    .principal {
+        flex-direction: column-reverse;  
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    
+    .cartoes {
+        flex-direction: column;
+        max-width: 450px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    .localizacao h2 {
+        font-size: 26px;
+    }
+
+    .localizacao-grid {
+        grid-template-columns: 1fr;      
+        max-width: 600px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    
+    .info {
+        display: none;
+    }
+
+    
+    .cabecalho {
+        justify-content: center;
+    }
+
+    
+    .logo {
+        padding: 5px 12px;
+    }
+
+    .logo-icone {
+        font-size: 22px;
+    }
+
+    .logo-texto {
+        font-size: 20px;
+    }
+
+    
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .principal-imagem {
+        width: 160px;
+        height: 160px;
+    }
+
+    .principal-texto h1 {
+        font-size: 22px;
+    }
+
+    
+    .chamada {
+        padding: 35px 15px;
+    }
+
+    .chamada h2 {
+        font-size: 22px;
+    }
+
+    .chamada p {
+        font-size: 15px;
+    }
+
+    .botao {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+    
+    .localizacao h2 {
+        font-size: 22px;
+    }
+
+    .localizacao-grid {
+        gap: 20px;                       
+    }
+
+    .localizacao-mapa {
+        min-height: 0;
+        padding: 10px;
+    }
+
+    .localizacao-info {
+        padding: 20px;
+    }
+
+    .localizacao-info h3 {
+        font-size: 19px;
+    }
+
+    .localizacao-info p {
+        font-size: 15px;
+    }
+}
